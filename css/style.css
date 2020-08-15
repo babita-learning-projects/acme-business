@@ -141,14 +141,41 @@ body {
         position: static;
     }
 
+    .main-header .container {
+        position: relative;
+    }
+
     .menu-bar {
         display: none;
+    }
+
+    .menu-bar.active-mobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 54px;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu-bar.active-mobile a {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .menu-bar.active-mobile a:hover {
+        background-color: #000;
     }
 
     .hamburger {
         display: inline-block;
         margin-left: 200px;
         text-align: center;
+        position: absolute;
+        top: 0;
+        right: 20px;
     }
 }
 
