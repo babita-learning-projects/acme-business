@@ -1,13 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 
-/* 
-.support__box {}
-.support__box-num {}
-.support__box-title {}
-.support__box-img {} 
-*/
-
 
 body {
     font-family: 'Sen', sans-serif;
@@ -755,6 +748,14 @@ body {
         width: 100%;
         left: 0%;
     }
+
+    .about-column h3 {
+        margin-left: 100px;
+    }
+
+    .about-column img {
+        margin-left: 170px;
+    } 
 }
 
 .about-testimonial__title {
@@ -964,10 +965,12 @@ body {
 }
 
 @media (max-width: 768px) {
-    .shop-bag-image-2 {
-        margin-left: -75px;
-        width: 140%;
+    .shop-bag-image {
+        margin-left: 10px;
+    }
 
+    .shop-bag-image-2 {
+        background-position: 0 0;
     }
       
 }
@@ -1313,6 +1316,30 @@ body {
     border-color: #222222;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .get-support {
+        display: none;
+    }
+
+    .get-support-image {
+        display: none;
+    }
+
+    .get-support h2 {
+        display: none;
+    }
+
+    .get-support p  {
+        display: none;
+    }
+
+    .get-support-button {
+        display: none;
+    }
+}
+
+/*----------------------------END-PROJECT----------------------------------*/
 
 
 
