@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <title>Acme-Business</title>
 </head>
@@ -47,7 +47,8 @@
                             since 1989.</h1>
                     </div>
                     <div class="banner-para">
-                        <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.</p>
+                        <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma
+                            City.</p>
                     </div>
                     <div class="banner-button">
                         <a href="shop.html" class="btn btn-light">Shop Merch</a>
@@ -69,7 +70,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="support-top-right ml-md-5">
-                        <p>COVID-19 has forced us to close our retail space, but we <br>need support from patrons like yourself now more than ever.<br> Below, we’ve listed the best ways to help us
+                        <p>COVID-19 has forced us to close our retail space, but we <br>need support from patrons like
+                            yourself now more than ever.<br> Below, we’ve listed the best ways to help us
                             through this season.</p>
                     </div>
                 </div>
@@ -87,7 +89,8 @@
                     <div class="support-square-text">SHOP <br>PRODUCTS</div>
                     <img src="images/circle-image.svg" class="support-circle-image" alt="images" />
                 </div>
-                <p class="square-para">Our full product line is still available online <br>here on our site! Getting outside and hiking is still something you can do. Get your gear<br> now!
+                <p class="square-para">Our full product line is still available online <br>here on our site! Getting
+                    outside and hiking is still something you can do. Get your gear<br> now!
                 </p>
 
             </div>
@@ -97,7 +100,8 @@
                     <div class="support-square-text mt-5">DONATE</div>
                     <img src="images/triangle-image.svg" class="support-triangle-image" alt="images" />
                 </div>
-                <p class="square-para">Since we've changed the way we operate to <br>online only, and to ensure your safety, not all <br>our staff is working. Donate to keep them <br>afloat.
+                <p class="square-para">Since we've changed the way we operate to <br>online only, and to ensure your
+                    safety, not all <br>our staff is working. Donate to keep them <br>afloat.
                 </p>
 
             </div>
@@ -107,20 +111,21 @@
                     <div class="support-square-text">BUY <br>GIFT CARDS</div>
                     <img src="images/Rectangle-image.svg" class="support-rectangle-image" alt="images" />
                 </div>
-                <p class="square-para">Have all the outdoor gear you need for<br> now? Buy a gift card and use it later or share <br>it with friends and family with our <br>team - until the city
+                <p class="square-para">Have all the outdoor gear you need for<br> now? Buy a gift card and use it later
+                    or share <br>it with friends and family with our <br>team - until the city
                     tells us we can’t..
                 </p>
             </div>
         </div>
     </section>
 
-
     <section class="safe">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-6 text-right">
                     <h2 class="safe-heading">How we're keeping you<br> <span>safe during COVID-19</span></h2>
-                    <p class="safe-paragraph">As an outdoor shop, we’ve taken precautionary<br> <span> measures to ensure the safety of all our</span><br> <span class="span-2">customers and team
+                    <p class="safe-paragraph">As an outdoor shop, we’ve taken precautionary<br> <span> measures to
+                            ensure the safety of all our</span><br> <span class="span-2">customers and team
                             members.</span></p>
                     <div class="safe-button">
                         <a href="announcement.html" class="btn btn-light">Read Our Statement</a>
@@ -197,12 +202,15 @@
                     <div class="col-md-7">
                         <p class="testimonial__title">Shop Local.</p>
                         <p class="testimonial__text">
-                            We know that during COVID-19, a lot of folks around the city and state are feeling uneasy about the future - we’re not sure what the future holds either.
+                            We know that during COVID-19, a lot of folks around the city and state are feeling uneasy
+                            about the future - we’re not sure what the future holds either.
                         </p>
-                        <p class="testimonial__text">That said: we know that we love making sure you have the gear you need for your adventures, and we’re going to keep doing that - with our team -
+                        <p class="testimonial__text">That said: we know that we love making sure you have the gear you
+                            need for your adventures, and we’re going to keep doing that - with our team -
                             until the
                             city tells us we can’t.</p>
-                        <p class="testimonial__text">But as long as folks like yourself support small businesses around the city, then we’ll be here — every day, making sure your orders arrive on
+                        <p class="testimonial__text">But as long as folks like yourself support small businesses around
+                            the city, then we’ll be here — every day, making sure your orders arrive on
                             time.</p>
                         <p>-------</p>
                         <p class="testimonial__text mb-1">Jane & John Doe</p>
@@ -237,7 +245,36 @@
         </div>
 
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.support-circle', {
+            scrollTrigger: {
+                trigger: '.support-circle',
+                toggleActions: 'restart none none none'
+            },
+            duration: 1,
+            opacity: 0,
+            rotation: 360,
+            scaleX: 0.3,
+            scaleY: 0.3,
+            x: -600,
+            y: 300,
+            stagger: 0.6
+        });
+
+        gsap.from('.menu-bar a', {
+            opacity: 0,
+            x: -500,
+            y: -50,
+            duration: 1,
+            stagger: 0.5
+        })
+    </script>
 
 
 </body>
